@@ -257,6 +257,7 @@ x,y,z,label
 0.39157,-1.254997,5.48,reconstructed_only
 0.397206,-1.259532,5.54,reconstructed_only
 0.388127,-1.276454,5.84,reconstructed_only
+0.394144,-1.27806,5.9,reconstructed_only
 0.389634,-1.234688,0.56,reconstructed_only
 0.397324,-1.239877,0.62,reconstructed_only
 0.416579,-1.5970516666666665,1.382075333333333,reconstructed_only
@@ -306,6 +307,7 @@ x,y,z,label
 0.410991,-1.315957,5.75,reconstructed_only
 0.417291,-1.315957,5.81,reconstructed_only
 0.4244775,-1.299153,5.855,reconstructed_only
+0.431417,-1.284033,5.9,reconstructed_only
 0.404931,-1.244755,0.68,reconstructed_only
 0.412338,-1.248884,0.74,reconstructed_only
 0.419445,-1.251898,0.8,reconstructed_only
@@ -416,6 +418,7 @@ x,y,z,label
 0.443979,-1.282905,4.94,reconstructed_only
 0.45682,-1.284014,5.78,reconstructed_only
 0.462751,-1.287176,5.84,reconstructed_only
+0.468846,-1.288924,5.9,reconstructed_only
 0.455768,-1.241793,0.8,reconstructed_only
 0.462517,-1.24329,0.86,reconstructed_only
 0.468809,-1.243263,0.92,reconstructed_only
@@ -530,6 +533,7 @@ x,y,z,label
 0.488318,-1.283389,5.72,reconstructed_only
 0.494239,-1.287723,5.78,reconstructed_only
 0.500258,-1.290933,5.84,reconstructed_only
+0.506401,-1.292731,5.9,reconstructed_only
 0.485864,-1.243708,1.82,reconstructed_only
 0.493404,-1.248937,1.88,reconstructed_only
 0.50087,-1.253859,1.94,reconstructed_only
@@ -646,6 +650,7 @@ x,y,z,label
 0.525698,-1.28601,5.72,reconstructed_only
 0.531744,-1.290374,5.78,reconstructed_only
 0.537855,-1.293617,5.84,reconstructed_only
+0.544049,-1.295451,5.9,reconstructed_only
 0.529701,-1.240163,1.88,reconstructed_only
 0.537299,-1.24501,1.94,reconstructed_only
 0.544692,-1.249086,2.0,reconstructed_only
@@ -754,6 +759,7 @@ x,y,z,label
 0.563135,-1.287583,5.72,reconstructed_only
 0.569308,-1.291965,5.78,reconstructed_only
 0.575513,-1.295229,5.84,reconstructed_only
+0.581759,-1.297084,5.9,reconstructed_only
 0.588105,-1.241915,2.06,reconstructed_only
 0.594828,-1.243329,2.12,reconstructed_only
 0.564796,-1.253581,2.18,reconstructed_only
@@ -851,6 +857,7 @@ x,y,z,label
 0.6193325000000001,-1.2878455,5.72,reconstructed_only
 0.6069,-1.292495,5.78,reconstructed_only
 0.6132,-1.295766,5.84,reconstructed_only
+0.6195,-1.297628,5.9,reconstructed_only
 0.601094,-1.243216,2.18,reconstructed_only
 0.606906,-1.241585,2.24,reconstructed_only
 0.618234,-1.244002,3.08,reconstructed_only
@@ -950,6 +957,7 @@ x,y,z,label
 0.675502,-1.28601,5.72,reconstructed_only
 0.644492,-1.291965,5.78,reconstructed_only
 0.650887,-1.295229,5.84,reconstructed_only
+0.657241,-1.297084,5.9,reconstructed_only
 0.662077,-1.240448,3.14,reconstructed_only
 0.669667,-1.245262,3.2,reconstructed_only
 0.6587765,-1.2537605,3.26,reconstructed_only
@@ -1052,6 +1060,7 @@ x,y,z,label
 0.712882,-1.283389,5.72,reconstructed_only
 0.7008085,-1.2890484999999998,5.78,reconstructed_only
 0.688545,-1.293617,5.84,reconstructed_only
+0.694951,-1.295451,5.9,reconstructed_only
 0.684113,-1.252153,3.32,reconstructed_only
 0.690805,-1.253614,3.38,reconstructed_only
 0.697084,-1.253535,3.44,reconstructed_only
@@ -1143,6 +1152,7 @@ x,y,z,label
 0.744369,-1.313049,1.695,reconstructed_only
 0.75698,-1.284014,5.78,reconstructed_only
 0.726142,-1.290933,5.84,reconstructed_only
+0.732599,-1.292731,5.9,reconstructed_only
 0.723683,-1.277895,0.78,reconstructed_only
 0.728408,-1.277895,0.825,reconstructed_only
 0.733133,-1.277895,0.87,reconstructed_only
@@ -1223,6 +1233,7 @@ x,y,z,label
 0.782319,-1.29602,1.695,reconstructed_only
 0.796509,-1.315957,5.75,reconstructed_only
 0.763649,-1.287176,5.84,reconstructed_only
+0.770154,-1.288924,5.9,reconstructed_only
 0.760579,-1.258688,0.78,reconstructed_only
 0.765304,-1.258688,0.825,reconstructed_only
 0.770029,-1.258688,0.87,reconstructed_only
@@ -1279,6 +1290,7 @@ x,y,z,label
 0.830994,-1.313049,2.52,reconstructed_only
 0.802809,-1.315957,5.81,reconstructed_only
 0.8050725,-1.299153,5.855,reconstructed_only
+0.807583,-1.284033,5.9,reconstructed_only
 0.810308,-1.277895,1.605,reconstructed_only
 0.815033,-1.277895,1.65,reconstructed_only
 0.819758,-1.277895,1.695,reconstructed_only

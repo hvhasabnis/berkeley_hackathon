@@ -1,0 +1,207 @@
+{
+  "input_file": "/Users/yasinsensoy/Desktop/as/geometrical_symmetry_method/data/roman_arena/baseline_demolition.csv",
+  "counts": {
+    "raw": 12415,
+    "after_voxel": 11929,
+    "after_denoise_all_observed": 11398,
+    "display_clean": 10724,
+    "structural_source": 10537,
+    "reflected_structural": 10537,
+    "reconstructed_candidates": 1006,
+    "reconstructed_only_strict": 1006,
+    "merged_before_fine_voxel": 11730,
+    "completed": 11730
+  },
+  "parameters": {
+    "voxel": 0.055,
+    "fine_voxel": 0.035,
+    "knn": 12,
+    "std_ratio": 2.0,
+    "plane_trim": 0.85,
+    "icp_trim": 0.7
+  },
+  "denoise": {
+    "removed_points": 531,
+    "threshold": 0.2787710745242593,
+    "mean_neighbor_distance": 0.18304785916198318,
+    "std_neighbor_distance": 0.04786160768113808
+  },
+  "display_source_selection": {
+    "method": "label_aware",
+    "kept": 11995,
+    "input": 12415,
+    "excluded_labels": [
+      "rubble",
+      "broken_edge"
+    ]
+  },
+  "display_denoise": {
+    "removed_points": 789,
+    "threshold": 0.2625736062083124,
+    "mean_neighbor_distance": 0.17939411827014345,
+    "std_neighbor_distance": 0.04158974396908448
+  },
+  "structural_source_selection": {
+    "method": "label_aware",
+    "kept": 11667,
+    "input": 12415,
+    "excluded_labels": [
+      "rubble",
+      "broken_edge",
+      "floor"
+    ]
+  },
+  "structural_denoise": {
+    "removed_points": 648,
+    "threshold": 0.25450062206864615,
+    "mean_neighbor_distance": 0.17666970933508375,
+    "std_neighbor_distance": 0.0389154563667812
+  },
+  "reconstructed_candidate_filter": {
+    "spacing": 0.08999999999999986,
+    "duplicate_threshold": 0.22049999999999967,
+    "candidate_count_after_duplicate_rejection": 1108,
+    "support_filter": {
+      "before": 1108,
+      "after": 1099,
+      "removed": 9,
+      "radius": 0.3239999999999995,
+      "min_neighbors": 5
+    },
+    "component_radius": 0.37259999999999943,
+    "component_count": 2,
+    "largest_component_sizes": [
+      1006,
+      93
+    ],
+    "min_component_points": 180,
+    "min_component_span": 1.259999999999998,
+    "kept_component_sizes": [
+      1006
+    ],
+    "final_reconstructed_count": 1006
+  },
+  "missing_sector_filter": {
+    "input": 1006,
+    "after_sector_and_surface_gate": 1006,
+    "final": 1006,
+    "sector_info": {
+      "found": true,
+      "sectors": [
+        {
+          "start_bin": 71,
+          "end_bin": 98,
+          "length_bins": 27,
+          "start_angle_rad": 3.097959422289935,
+          "end_angle_rad": 4.276056667386108,
+          "start_angle_degrees": 177.5,
+          "end_angle_degrees": 245.00000000000003,
+          "raw_length_bins": 23,
+          "padding_bins": 2,
+          "score": 6425.455074934382
+        }
+      ],
+      "sector_count": 1,
+      "ellipse_axes": [
+        6.19819,
+        4.05
+      ],
+      "occupancy_reference": 73.4,
+      "deficiency_ratio": 0.65,
+      "candidate_runs": [
+        {
+          "start_degrees": 182.5,
+          "end_degrees": 239.99999999999997,
+          "length_bins": 23,
+          "score": 6425.455074934382
+        }
+      ]
+    },
+    "surface_gate": {
+      "facade_rho_range": [
+        0.9,
+        1.075
+      ],
+      "seating_rho_range": [
+        0.43,
+        0.92
+      ],
+      "min_facade_z": 0.22,
+      "min_seating_z": 0.16,
+      "max_seating_z": 2.9
+    },
+    "support_filter": {
+      "before": 1006,
+      "after": 1006,
+      "removed": 0,
+      "radius": 0.28799999999999953,
+      "min_neighbors": 4
+    }
+  },
+  "symmetry_plane": {
+    "plane_point": [
+      0.0,
+      0.0,
+      1.875
+    ],
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "normal_angle_degrees": 0.0,
+    "offset": 0.0,
+    "optimization_score": 0.14929077267508442
+  },
+  "chamfer": {
+    "pinc_vs_pref_before_icp": 0.010159050509452615,
+    "pinc_vs_pref_after_icp": 0.010159050509454723,
+    "final_bidirectional_halves": {
+      "chamfer": 0.0031343593540215527,
+      "left_count": 5626,
+      "right_count": 6104
+    }
+  },
+  "icp": {
+    "iterations": 2,
+    "mean_error": 2.2749052462431984e-15,
+    "error_history": [
+      0.0,
+      2.2749052462431984e-15
+    ],
+    "rotation": [
+      [
+        1.0,
+        2.9853173315415544e-16,
+        3.427998802003744e-18
+      ],
+      [
+        -3.6096050336519953e-16,
+        1.0000000000000004,
+        2.708320651405077e-17
+      ],
+      [
+        -6.076953488828166e-18,
+        -1.3877787807814463e-17,
+        1.0000000000000002
+      ]
+    ],
+    "translation": [
+      -1.3656706336320849e-16,
+      1.1102230246251565e-15,
+      -4.440892098500626e-16
+    ]
+  },
+  "bbox_completed": {
+    "min": [
+      -6.2,
+      -4.05,
+      0.0
+    ],
+    "max": [
+      6.2,
+      4.05,
+      3.75
+    ]
+  }
+}

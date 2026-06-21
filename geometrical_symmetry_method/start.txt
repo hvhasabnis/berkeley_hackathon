@@ -1,1 +1,2 @@
 python3 -m http.server 8000
+chat -> fast sector overview - 1 haiku call (select the mode) - pipeline() - chamfer - result

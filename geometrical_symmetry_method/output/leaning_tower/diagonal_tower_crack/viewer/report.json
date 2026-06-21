@@ -2,19 +2,19 @@
   "subject": "leaning_tower",
   "case": "diagonal_tower_crack",
   "note": "Core pipeline output is preserved in /core. Viewer output uses exact deterministic synthetic missing surfaces when available, avoiding reflected rubble and threshold artifacts.",
-  "core_output_dir": "C:\\Hrishikesh\\point cloud project\\multi-monument-completion-custom-upload-modes\\output\\leaning_tower\\diagonal_tower_crack\\core",
-  "viewer_output_dir": "C:\\Hrishikesh\\point cloud project\\multi-monument-completion-custom-upload-modes\\output\\leaning_tower\\diagonal_tower_crack\\viewer",
+  "core_output_dir": "/Users/yasinsensoy/Desktop/as/geometrical_symmetry_method/output/leaning_tower/diagonal_tower_crack/core",
+  "viewer_output_dir": "/Users/yasinsensoy/Desktop/as/geometrical_symmetry_method/output/leaning_tower/diagonal_tower_crack/viewer",
   "counts_viewer": {
-    "raw_input": 34209,
-    "observed_display": 30477,
-    "reconstructed_only": 1317,
+    "raw_input": 34197,
+    "observed_display": 30465,
+    "reconstructed_only": 1329,
     "completed": 31779
   },
   "adapter": {
     "mode": "exact_synthetic_missing_surface",
-    "source": "C:\\Hrishikesh\\point cloud project\\multi-monument-completion-custom-upload-modes\\data\\leaning_tower\\diagonal_tower_crack_missing.csv",
+    "source": "/Users/yasinsensoy/Desktop/as/geometrical_symmetry_method/data/leaning_tower/diagonal_tower_crack_missing.csv",
     "voxel": 0.04,
-    "final_reconstructed_points": 1317
+    "final_reconstructed_points": 1329
   },
   "core_report": {
     "subject": "leaning_tower",

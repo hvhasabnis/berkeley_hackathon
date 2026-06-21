@@ -2,8 +2,8 @@
   "subject": "palmyra_arch",
   "case": "right_pier_shear",
   "note": "Core pipeline output is preserved in /core. Viewer output uses exact deterministic synthetic missing surfaces when available, avoiding reflected rubble and threshold artifacts.",
-  "core_output_dir": "C:\\Hrishikesh\\point cloud project\\multi-monument-completion-custom-upload-modes\\output\\palmyra_arch\\right_pier_shear\\core",
-  "viewer_output_dir": "C:\\Hrishikesh\\point cloud project\\multi-monument-completion-custom-upload-modes\\output\\palmyra_arch\\right_pier_shear\\viewer",
+  "core_output_dir": "/Users/yasinsensoy/Desktop/as/geometrical_symmetry_method/output/palmyra_arch/right_pier_shear/core",
+  "viewer_output_dir": "/Users/yasinsensoy/Desktop/as/geometrical_symmetry_method/output/palmyra_arch/right_pier_shear/viewer",
   "counts_viewer": {
     "raw_input": 14842,
     "observed_display": 13923,
@@ -12,7 +12,7 @@
   },
   "adapter": {
     "mode": "exact_synthetic_missing_surface",
-    "source": "C:\\Hrishikesh\\point cloud project\\multi-monument-completion-custom-upload-modes\\data\\palmyra_arch\\right_pier_shear_missing.csv",
+    "source": "/Users/yasinsensoy/Desktop/as/geometrical_symmetry_method/data/palmyra_arch/right_pier_shear_missing.csv",
     "voxel": 0.04,
     "final_reconstructed_points": 1960
   },

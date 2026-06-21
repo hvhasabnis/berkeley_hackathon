@@ -16,7 +16,7 @@ Input CSV formats accepted:
 """
 
 from __future__ import annotations
-
+import cache
 import argparse
 import csv
 import json
@@ -54,6 +54,9 @@ def load_xyz_label_csv(path: Path) -> Tuple[np.ndarray, Optional[np.ndarray]]:
     Labels are used only when they exist. Real scans usually will not have labels,
     so the pipeline has a geometry-based fallback below.
     """
+    hit = cache.get_labeled_cloud(path)
+    if hit is not None:
+        return hit
     rows = []
     labels = []
     saw_label = False
@@ -80,6 +83,8 @@ def load_xyz_label_csv(path: Path) -> Tuple[np.ndarray, Optional[np.ndarray]]:
     points = np.asarray(rows, dtype=np.float64)
     if saw_label:
         return points, np.asarray(labels, dtype=object)
+
+    cache.set_labeled_cloud(path, points, labels if saw_label else None)
     return points, None
 
 
@@ -957,6 +962,11 @@ def pipeline(args: argparse.Namespace) -> Dict[str, object]:
     input_path = Path(args.input)
     output_dir = Path(args.output)
     output_dir.mkdir(parents=True, exist_ok=True)
+    ckey = cache.pipeline_key(input_path, args)
+    cached = cache.get_json(ckey)
+    if cached is not None and (output_dir / "completed.csv").exists():
+        print('[cache] pipeline HIT')
+        return cached
 
     raw, labels = load_xyz_label_csv(input_path)
 
@@ -1101,6 +1111,7 @@ def pipeline(args: argparse.Namespace) -> Dict[str, object]:
     with (output_dir / "report.json").open("w") as f:
         json.dump(report, f, indent=2)
 
+    cache.set_json(ckey, report)
     return report
 
 

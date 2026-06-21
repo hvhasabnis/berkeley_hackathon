@@ -15970,7 +15970,6 @@ x,y,z,label
 0.37137,-1.264298,5.66,pinc_display_clean
 0.376797,-1.269251,5.72,pinc_display_clean
 0.38236,-1.273428,5.78,pinc_display_clean
-0.394144,-1.27806,5.9,pinc_display_clean
 0.363367,-1.270963,5.96,pinc_display_clean
 0.369997,-1.269364,6.02,pinc_display_clean
 0.376919,-1.266352,6.08,pinc_display_clean
@@ -16185,7 +16184,6 @@ x,y,z,label
 0.424304,-1.369925,0.135,pinc_display_clean
 0.429413,-1.3747150000000001,0.16999999999999998,pinc_display_clean
 0.433754,-1.369925,0.225,pinc_display_clean
-0.431417,-1.284033,5.9,pinc_display_clean
 0.429891,-1.315957,5.93,pinc_display_clean
 0.4369455,-1.3000530000000001,5.975,pinc_display_clean
 0.404298,-1.309794,6.05,pinc_display_clean
@@ -16404,7 +16402,6 @@ x,y,z,label
 0.473424,-1.357417,0.225,pinc_display_clean
 0.468246,-1.321007,5.93,pinc_display_clean
 0.474546,-1.321007,5.99,pinc_display_clean
-0.468846,-1.288924,5.9,pinc_display_clean
 0.475126,-1.289102,5.96,pinc_display_clean
 0.444214,-1.282688,6.02,pinc_display_clean
 0.442491,-1.315957,6.05,pinc_display_clean
@@ -16634,7 +16631,6 @@ x,y,z,label
 0.506046,-1.321007,6.29,pinc_display_clean
 0.512346,-1.321007,6.35,pinc_display_clean
 0.518646,-1.321007,6.41,pinc_display_clean
-0.506401,-1.292731,5.9,pinc_display_clean
 0.512681,-1.292956,5.96,pinc_display_clean
 0.5003455,-1.2896415,6.02,pinc_display_clean
 0.488226,-1.284824,6.08,pinc_display_clean
@@ -16866,7 +16862,6 @@ x,y,z,label
 0.543846,-1.321007,6.65,pinc_display_clean
 0.550146,-1.321007,6.71,pinc_display_clean
 0.556446,-1.321007,6.77,pinc_display_clean
-0.544049,-1.295451,5.9,pinc_display_clean
 0.550333,-1.295711,5.96,pinc_display_clean
 0.556711,-1.294375,6.02,pinc_display_clean
 0.525649,-1.288753,6.08,pinc_display_clean
@@ -17079,7 +17074,6 @@ x,y,z,label
 0.580569,-1.313049,0.135,pinc_display_clean
 0.585294,-1.313049,0.18,pinc_display_clean
 0.590019,-1.313049,0.225,pinc_display_clean
-0.581759,-1.297084,5.9,pinc_display_clean
 0.563175,-1.29156,6.08,pinc_display_clean
 0.56971,-1.28752,6.14,pinc_display_clean
 0.576296,-1.282615,6.2,pinc_display_clean
@@ -17296,7 +17290,6 @@ x,y,z,label
 0.618519,-1.29602,0.135,pinc_display_clean
 0.623244,-1.29602,0.18,pinc_display_clean
 0.627969,-1.29602,0.225,pinc_display_clean
-0.6195,-1.297628,5.9,pinc_display_clean
 0.619585,-1.293527,6.08,pinc_display_clean
 0.607188,-1.289214,6.14,pinc_display_clean
 0.61363,-1.284311,6.2,pinc_display_clean
@@ -17515,7 +17508,6 @@ x,y,z,label
 0.665867,-1.329437,6.71,pinc_display_clean
 0.672167,-1.329437,6.77,pinc_display_clean
 0.678467,-1.329437,6.83,pinc_display_clean
-0.657241,-1.297084,5.9,pinc_display_clean
 0.67603,-1.293246,6.08,pinc_display_clean
 0.6447,-1.289779,6.14,pinc_display_clean
 0.651,-1.284876,6.2,pinc_display_clean
@@ -17735,7 +17727,6 @@ x,y,z,label
 0.71085,-1.33,6.77,pinc_display_clean
 0.71715,-1.33,6.83,pinc_display_clean
 0.719209,-1.302698,0.16,pinc_display_clean
-0.694951,-1.295451,5.9,pinc_display_clean
 0.701267,-1.295711,5.96,pinc_display_clean
 0.707489,-1.294375,6.02,pinc_display_clean
 0.713625,-1.29156,6.08,pinc_display_clean
@@ -17973,7 +17964,6 @@ x,y,z,label
 0.749533,-1.329437,6.77,pinc_display_clean
 0.755833,-1.329437,6.83,pinc_display_clean
 0.7568,-1.281718,0.16,pinc_display_clean
-0.732599,-1.292731,5.9,pinc_display_clean
 0.738919,-1.292956,5.96,pinc_display_clean
 0.745099,-1.29159,6.02,pinc_display_clean
 0.751151,-1.288753,6.08,pinc_display_clean
@@ -18228,7 +18218,6 @@ x,y,z,label
 0.781883,-1.32775,6.71,pinc_display_clean
 0.788183,-1.32775,6.77,pinc_display_clean
 0.794483,-1.32775,6.83,pinc_display_clean
-0.770154,-1.288924,5.9,pinc_display_clean
 0.776474,-1.289102,5.96,pinc_display_clean
 0.78261,-1.287693,6.02,pinc_display_clean
 0.788574,-1.284824,6.08,pinc_display_clean
@@ -18491,7 +18480,6 @@ x,y,z,label
 0.826767,-1.324939,6.77,pinc_display_clean
 0.833067,-1.324939,6.83,pinc_display_clean
 0.834702,-1.309794,5.75,pinc_display_clean
-0.807583,-1.284033,5.9,pinc_display_clean
 0.815409,-1.315957,5.93,pinc_display_clean
 0.8178045,-1.3000530000000001,5.975,pinc_display_clean
 0.819986,-1.282688,6.02,pinc_display_clean

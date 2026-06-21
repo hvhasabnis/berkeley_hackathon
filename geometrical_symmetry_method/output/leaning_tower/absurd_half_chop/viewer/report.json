@@ -2,8 +2,8 @@
   "subject": "leaning_tower",
   "case": "absurd_half_chop",
   "note": "Core pipeline output is preserved in /core. Viewer output uses exact deterministic synthetic missing surfaces when available, avoiding reflected rubble and threshold artifacts.",
-  "core_output_dir": "C:\\Hrishikesh\\point cloud project\\multi-monument-completion-custom-upload-modes\\output\\leaning_tower\\absurd_half_chop\\core",
-  "viewer_output_dir": "C:\\Hrishikesh\\point cloud project\\multi-monument-completion-custom-upload-modes\\output\\leaning_tower\\absurd_half_chop\\viewer",
+  "core_output_dir": "/Users/yasinsensoy/Desktop/as/geometrical_symmetry_method/output/leaning_tower/absurd_half_chop/core",
+  "viewer_output_dir": "/Users/yasinsensoy/Desktop/as/geometrical_symmetry_method/output/leaning_tower/absurd_half_chop/viewer",
   "counts_viewer": {
     "raw_input": 20396,
     "observed_display": 17743,
@@ -12,7 +12,7 @@
   },
   "adapter": {
     "mode": "exact_synthetic_missing_surface",
-    "source": "C:\\Hrishikesh\\point cloud project\\multi-monument-completion-custom-upload-modes\\data\\leaning_tower\\absurd_half_chop_missing.csv",
+    "source": "/Users/yasinsensoy/Desktop/as/geometrical_symmetry_method/data/leaning_tower/absurd_half_chop_missing.csv",
     "voxel": 0.04,
     "final_reconstructed_points": 14089
   },

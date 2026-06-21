@@ -4,6 +4,8 @@ Fast mode prepares all synthetic test cases without changing the core pipeline.
 The core completion file remains python/completion_pipeline.py.  Use --run-core
 only when raw core diagnostics are required.
 """
+
+# Orchestrator : python python/run_subject.py --subject roman_arena --regenerate
 from __future__ import annotations
 
 import argparse

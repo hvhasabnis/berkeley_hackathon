@@ -1,6 +1,208 @@
 {
-  "subject": "roman_arena",
-  "case": "diagonal_collapse",
-  "mode": "core_skipped_fast_viewer_build",
-  "message": "The core completion pipeline was not run for this fast build. Use --run-core to generate raw core diagnostics. Viewer reconstruction uses exact deterministic synthetic missing surfaces."
+  "input_file": "/Users/yasinsensoy/Desktop/as/geometrical_symmetry_method/data/roman_arena/diagonal_collapse.csv",
+  "counts": {
+    "raw": 13063,
+    "after_voxel": 12529,
+    "after_denoise_all_observed": 11957,
+    "display_clean": 11235,
+    "structural_source": 11049,
+    "reflected_structural": 11049,
+    "reconstructed_candidates": 486,
+    "reconstructed_only_strict": 484,
+    "merged_before_fine_voxel": 11719,
+    "completed": 11719
+  },
+  "parameters": {
+    "voxel": 0.075,
+    "fine_voxel": 0.05,
+    "knn": 12,
+    "std_ratio": 2.0,
+    "plane_trim": 0.85,
+    "icp_trim": 0.7
+  },
+  "denoise": {
+    "removed_points": 572,
+    "threshold": 0.28101264163543926,
+    "mean_neighbor_distance": 0.1824753498550514,
+    "std_neighbor_distance": 0.049268645890193946
+  },
+  "display_source_selection": {
+    "method": "label_aware",
+    "kept": 12563,
+    "input": 13063,
+    "excluded_labels": [
+      "rubble",
+      "broken_edge"
+    ]
+  },
+  "display_denoise": {
+    "removed_points": 806,
+    "threshold": 0.2624549343417726,
+    "mean_neighbor_distance": 0.17816423478565288,
+    "std_neighbor_distance": 0.042145349778059865
+  },
+  "structural_source_selection": {
+    "method": "label_aware",
+    "kept": 12235,
+    "input": 13063,
+    "excluded_labels": [
+      "rubble",
+      "broken_edge",
+      "floor"
+    ]
+  },
+  "structural_denoise": {
+    "removed_points": 664,
+    "threshold": 0.2547729718388101,
+    "mean_neighbor_distance": 0.1755456933698347,
+    "std_neighbor_distance": 0.039613639234487706
+  },
+  "reconstructed_candidate_filter": {
+    "spacing": 0.08999999999999986,
+    "duplicate_threshold": 0.22049999999999967,
+    "candidate_count_after_duplicate_rejection": 615,
+    "support_filter": {
+      "before": 615,
+      "after": 605,
+      "removed": 10,
+      "radius": 0.3239999999999995,
+      "min_neighbors": 5
+    },
+    "component_radius": 0.37259999999999943,
+    "component_count": 3,
+    "largest_component_sizes": [
+      486,
+      106,
+      13
+    ],
+    "min_component_points": 180,
+    "min_component_span": 1.259999999999998,
+    "kept_component_sizes": [
+      486
+    ],
+    "final_reconstructed_count": 486
+  },
+  "missing_sector_filter": {
+    "input": 486,
+    "after_sector_and_surface_gate": 484,
+    "final": 484,
+    "sector_info": {
+      "found": true,
+      "sectors": [
+        {
+          "start_bin": 82,
+          "end_bin": 103,
+          "length_bins": 21,
+          "start_angle_rad": 3.5779249665883754,
+          "end_angle_rad": 4.494222823885399,
+          "start_angle_degrees": 205.0,
+          "end_angle_degrees": 257.5,
+          "raw_length_bins": 17,
+          "padding_bins": 2,
+          "score": 3086.5568713373814
+        }
+      ],
+      "sector_count": 1,
+      "ellipse_axes": [
+        6.19819,
+        4.05
+      ],
+      "occupancy_reference": 75.4,
+      "deficiency_ratio": 0.65,
+      "candidate_runs": [
+        {
+          "start_degrees": 210.0,
+          "end_degrees": 252.50000000000003,
+          "length_bins": 17,
+          "score": 3086.5568713373814
+        }
+      ]
+    },
+    "surface_gate": {
+      "facade_rho_range": [
+        0.9,
+        1.075
+      ],
+      "seating_rho_range": [
+        0.43,
+        0.92
+      ],
+      "min_facade_z": 0.22,
+      "min_seating_z": 0.16,
+      "max_seating_z": 2.9
+    },
+    "support_filter": {
+      "before": 484,
+      "after": 484,
+      "removed": 0,
+      "radius": 0.28799999999999953,
+      "min_neighbors": 4
+    }
+  },
+  "symmetry_plane": {
+    "plane_point": [
+      0.0,
+      0.0,
+      1.875
+    ],
+    "normal": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "normal_angle_degrees": 0.0,
+    "offset": 0.0,
+    "optimization_score": 0.2038961497203401
+  },
+  "chamfer": {
+    "pinc_vs_pref_before_icp": 0.00033540886150948255,
+    "pinc_vs_pref_after_icp": 0.00033540886151174826,
+    "final_bidirectional_halves": {
+      "chamfer": 0.0032347252009958046,
+      "left_count": 5616,
+      "right_count": 6103
+    }
+  },
+  "icp": {
+    "iterations": 2,
+    "mean_error": 5.348807038878897e-16,
+    "error_history": [
+      0.0,
+      5.348807038878897e-16
+    ],
+    "rotation": [
+      [
+        0.9999999999999997,
+        -3.040761812698256e-17,
+        -6.450223261018229e-18
+      ],
+      [
+        -1.2046462603807703e-17,
+        1.0000000000000007,
+        3.584192201144594e-17
+      ],
+      [
+        4.819507266851889e-18,
+        -2.34187669256869e-17,
+        1.0000000000000004
+      ]
+    ],
+    "translation": [
+      4.028781774451977e-17,
+      -3.3306690738754706e-16,
+      -8.881784197001252e-16
+    ]
+  },
+  "bbox_completed": {
+    "min": [
+      -6.2,
+      -4.05,
+      0.0
+    ],
+    "max": [
+      6.2,
+      4.05,
+      3.75
+    ]
+  }
 }
