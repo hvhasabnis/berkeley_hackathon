@@ -102,6 +102,9 @@ def voxel_grid_filter(points: np.ndarray, voxel_size: float) -> np.ndarray:
 
     keys = np.floor(points / voxel_size).astype(np.int64)
     unique_keys, inverse = np.unique(keys, axis=0, return_inverse=True)
+    # NumPy 2.0 returns `inverse` with shape (N, 1) for axis-based unique; older
+    # versions return (N,). Flatten so np.add.at scatters correctly on both.
+    inverse = np.asarray(inverse).reshape(-1)
 
     sums = np.zeros((len(unique_keys), 3), dtype=np.float64)
     counts = np.zeros(len(unique_keys), dtype=np.int64)

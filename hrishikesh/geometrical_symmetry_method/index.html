@@ -1,11 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Multi-Monument Completion Viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Trencadís — AI-powered reconstruction management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body data-mode="dynamic">
+
+  <div id="splash">
+    <canvas id="splashCanvas"></canvas>
+    <div class="wash"></div>
+    <div class="splash-ui">
+      <div class="top-row">
+        <div class="mark"><span class="glyph"><i></i><i></i><i></i><i></i></span><span class="name">Digital Twin</span></div>
+        <nav class="splash-nav">
+        <button data-page="home" class="active">Home</button>
+        <button data-page="impact">Restoration impact</button>
+        <button data-page="deeplearning">AdaPTR future</button>
+        <button data-page="atelier">Museum atelier</button>
+      </nav>
+        <div class="meta">point-cloud reconstruction<br>symmetry · learned priors · fusion<br>build v0.2</div>
+      </div>
+
+      <div class="hero page active" data-page="home">
+          <div class="eyebrow">Architectural digital-twin restoration</div>
+          <h1>Rebuilding heritage<br><em>from point clouds</em></h1>
+          <p>We transform high-accuracy 3D point-cloud scans of damaged monuments, churches, and historic buildings into digital twins that support restoration planning, reduce cost, and help teams recover structure after earthquakes, fires, erosion, or partial collapse.</p>
+          <div class="cta-row">
+            <button id="enterBtn" type="button" class="btn btn-primary">Enter viewer →</button>
+            <button type="button" class="btn btn-ghost" data-page="impact">Why it matters</button>
+          </div>
+        </div>
+
+        <div class="hero page" data-page="impact">
+          <button class="back-link" data-back>← Back</button>
+          <div class="eyebrow">Restoration management</div>
+          <h1>Digital twins for<br><em>damaged heritage</em></h1>
+          <p>Accurate scan data can become a measurable reconstruction layer: missing regions, structural symmetry, and candidate restoration geometry are visualized before physical work begins.</p>
+        </div>
+
+        <div class="hero page" data-page="deeplearning">
+          <button class="back-link" data-back>← Back</button>
+          <div class="eyebrow">Future work</div>
+          <h1>AdaPTR-based<br><em>3D prediction</em></h1>
+          <p>Next, we plan to train deep-learning point-cloud completion models with AdaPTR-style architectures for stronger missing-region prediction. This requires CUDA support and access to high-memory GPU compute for training, evaluation, and large-scale inference.</p>
+        </div>
+
+        <div class="hero page museum-page" data-page="atelier">
+          <button class="back-link" data-back>← Back</button>
+          <div class="eyebrow">Museum atelier</div>
+          <h1>Learning the architect’s<br><em>visual language</em></h1>
+          <p>Inspired by long restoration stories like the Sagrada Família, the goal is not only repair, but creative continuity: helping architects study historic patterns, ornaments, arches, mosaics, and structural rhythm so damaged buildings can be completed with respect for their original design logic.</p>
+          <div class="museum-ornaments">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+
+      <div class="bottom-row">
+        <div class="legend-glass">
+          <span><i style="background:#c45c80"></i>structure</span>
+          <span><i style="background:#e0913a"></i>reconstructed</span>
+          <span><i style="background:#6a64b8"></i>elevation</span>
+        </div>
+        <div class="scroll-cue" id="enterCue">enter ↓</div>
+      </div>
+    </div>
+  </div>
+
+<button id="viewerBack" class="viewer-back hidden" type="button">← Back to home</button>
   <div id="panel">
     <b id="viewerTitle">Monument Completion Viewer</b>
 
@@ -22,9 +88,9 @@
 
       <label for="customModeSelect">Custom reconstruction mode</label>
       <select id="customModeSelect">
-        <option value="conservative">Conservative - safest, fewer red particles</option>
-        <option value="balanced" selected>Balanced - recommended</option>
-        <option value="aggressive">Aggressive - fills larger missing areas</option>
+        <option value="conservative">Conservative — safest, fewer red particles</option>
+        <option value="balanced" selected>Balanced — recommended</option>
+        <option value="aggressive">Aggressive — fills larger missing areas</option>
       </select>
 
       <div class="upload-note">PLY is reconstructed locally in the browser using voxel filtering, adaptive symmetry reflection, and duplicate rejection. Use Balanced or Aggressive if Conservative produces too few red points.</div>
@@ -39,10 +105,11 @@
 
     <div id="legend"></div>
   </div>
-  <div id="status">Loading...</div>
+  <div id="status">Loading…</div>
 
   <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="js/splash.js"></script>
   <script src="js/viewer.js"></script>
 </body>
 </html>

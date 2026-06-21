@@ -7,7 +7,7 @@ const VIEW_MODES = {
 };
 
 const scene = new THREE.Scene();
-scene.background = new THREE.Color(0x101010);
+scene.background = new THREE.Color(0x140f0a);
 
 const camera = new THREE.PerspectiveCamera(58, window.innerWidth / window.innerHeight, 0.1, 1000);
 camera.up.copy(WORLD_UP);
