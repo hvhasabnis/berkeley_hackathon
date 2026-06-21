@@ -1,5 +1,8 @@
 # berkeley_hackathon
 
+
+<img width="1344" height="703" alt="Ekran Resmi 2026-06-21 11 59 38" src="https://github.com/user-attachments/assets/c45aca75-7074-4f30-9983-1cd915711800" />
+
 This build keeps the existing monument test cases and adds an improved **Custom monument PLY upload** workflow.
 
 The core reconstruction pipeline remains unchanged:
