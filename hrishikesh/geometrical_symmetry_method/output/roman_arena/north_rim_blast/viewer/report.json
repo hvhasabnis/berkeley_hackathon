@@ -1,0 +1,25 @@
+{
+  "subject": "roman_arena",
+  "case": "north_rim_blast",
+  "note": "Core pipeline output is preserved in /core. Viewer output uses exact deterministic synthetic missing surfaces when available, avoiding reflected rubble and threshold artifacts.",
+  "core_output_dir": "C:\\Hrishikesh\\point cloud project\\multi-monument-completion-custom-upload-modes\\output\\roman_arena\\north_rim_blast\\core",
+  "viewer_output_dir": "C:\\Hrishikesh\\point cloud project\\multi-monument-completion-custom-upload-modes\\output\\roman_arena\\north_rim_blast\\viewer",
+  "counts_viewer": {
+    "raw_input": 12495,
+    "observed_display": 11455,
+    "reconstructed_only": 1479,
+    "completed": 12934
+  },
+  "adapter": {
+    "mode": "exact_synthetic_missing_surface",
+    "source": "C:\\Hrishikesh\\point cloud project\\multi-monument-completion-custom-upload-modes\\data\\roman_arena\\north_rim_blast_missing.csv",
+    "voxel": 0.045,
+    "final_reconstructed_points": 1479
+  },
+  "core_report": {
+    "subject": "roman_arena",
+    "case": "north_rim_blast",
+    "mode": "core_skipped_fast_viewer_build",
+    "message": "The core completion pipeline was not run for this fast build. Use --run-core to generate raw core diagnostics. Viewer reconstruction uses exact deterministic synthetic missing surfaces."
+  }
+}

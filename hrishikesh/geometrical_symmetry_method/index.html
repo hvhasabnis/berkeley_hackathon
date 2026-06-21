@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Multi-Monument Completion Viewer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-mode="dynamic">
+  <div id="panel">
+    <b id="viewerTitle">Monument Completion Viewer</b>
+
+    <label for="subjectSelect">Test subject</label>
+    <select id="subjectSelect"></select>
+
+    <label for="caseSelect">Test data</label>
+    <select id="caseSelect"></select>
+
+    <div id="customUploadBox" class="custom-upload hidden">
+      <label for="customPlyInput">Custom monument PLY</label>
+      <input id="customPlyInput" type="file" accept=".ply" />
+      <button id="clearCustomBtn" type="button">Clear custom upload</button>
+
+      <label for="customModeSelect">Custom reconstruction mode</label>
+      <select id="customModeSelect">
+        <option value="conservative">Conservative - safest, fewer red particles</option>
+        <option value="balanced" selected>Balanced - recommended</option>
+        <option value="aggressive">Aggressive - fills larger missing areas</option>
+      </select>
+
+      <div class="upload-note">PLY is reconstructed locally in the browser using voxel filtering, adaptive symmetry reflection, and duplicate rejection. Use Balanced or Aggressive if Conservative produces too few red points.</div>
+    </div>
+
+    <label for="viewSelect">View</label>
+    <select id="viewSelect">
+      <option value="input">Input incomplete cloud</option>
+      <option value="reconstructed">Reconstructed particles</option>
+      <option value="completed">Completed cloud</option>
+    </select>
+
+    <div id="legend"></div>
+  </div>
+  <div id="status">Loading...</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="js/viewer.js"></script>
+</body>
+</html>

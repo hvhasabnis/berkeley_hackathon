@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    params.set("view", "reconstructed");
+    window.location.replace("index.html?" + params.toString());
+  </script>
+</head>
+<body>
+  Redirecting to <a href="index.html?view=reconstructed">single viewer</a>...
+</body>
+</html>

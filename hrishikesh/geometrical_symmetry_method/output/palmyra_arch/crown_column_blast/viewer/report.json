@@ -1,0 +1,25 @@
+{
+  "subject": "palmyra_arch",
+  "case": "crown_column_blast",
+  "note": "Core pipeline output is preserved in /core. Viewer output uses exact deterministic synthetic missing surfaces when available, avoiding reflected rubble and threshold artifacts.",
+  "core_output_dir": "C:\\Hrishikesh\\point cloud project\\multi-monument-completion-custom-upload-modes\\output\\palmyra_arch\\crown_column_blast\\core",
+  "viewer_output_dir": "C:\\Hrishikesh\\point cloud project\\multi-monument-completion-custom-upload-modes\\output\\palmyra_arch\\crown_column_blast\\viewer",
+  "counts_viewer": {
+    "raw_input": 14674,
+    "observed_display": 13688,
+    "reconstructed_only": 2196,
+    "completed": 15872
+  },
+  "adapter": {
+    "mode": "exact_synthetic_missing_surface",
+    "source": "C:\\Hrishikesh\\point cloud project\\multi-monument-completion-custom-upload-modes\\data\\palmyra_arch\\crown_column_blast_missing.csv",
+    "voxel": 0.04,
+    "final_reconstructed_points": 2196
+  },
+  "core_report": {
+    "subject": "palmyra_arch",
+    "case": "crown_column_blast",
+    "mode": "core_skipped_fast_viewer_build",
+    "message": "The core completion pipeline was not run for this fast build. Use --run-core to generate raw core diagnostics. Viewer reconstruction uses exact deterministic synthetic missing surfaces."
+  }
+}

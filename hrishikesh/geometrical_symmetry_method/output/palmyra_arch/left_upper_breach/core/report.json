@@ -1,0 +1,6 @@
+{
+  "subject": "palmyra_arch",
+  "case": "left_upper_breach",
+  "mode": "core_skipped_fast_viewer_build",
+  "message": "The core completion pipeline was not run for this fast build. Use --run-core to generate raw core diagnostics. Viewer reconstruction uses exact deterministic synthetic missing surfaces."
+}

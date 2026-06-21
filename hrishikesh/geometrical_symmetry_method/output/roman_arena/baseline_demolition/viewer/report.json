@@ -1,0 +1,25 @@
+{
+  "subject": "roman_arena",
+  "case": "baseline_demolition",
+  "note": "Core pipeline output is preserved in /core. Viewer output uses exact deterministic synthetic missing surfaces when available, avoiding reflected rubble and threshold artifacts.",
+  "core_output_dir": "C:\\Hrishikesh\\point cloud project\\multi-monument-completion-custom-upload-modes\\output\\roman_arena\\baseline_demolition\\core",
+  "viewer_output_dir": "C:\\Hrishikesh\\point cloud project\\multi-monument-completion-custom-upload-modes\\output\\roman_arena\\baseline_demolition\\viewer",
+  "counts_viewer": {
+    "raw_input": 12415,
+    "observed_display": 11475,
+    "reconstructed_only": 1459,
+    "completed": 12934
+  },
+  "adapter": {
+    "mode": "exact_synthetic_missing_surface",
+    "source": "C:\\Hrishikesh\\point cloud project\\multi-monument-completion-custom-upload-modes\\data\\roman_arena\\baseline_demolition_missing.csv",
+    "voxel": 0.045,
+    "final_reconstructed_points": 1459
+  },
+  "core_report": {
+    "subject": "roman_arena",
+    "case": "baseline_demolition",
+    "mode": "core_skipped_fast_viewer_build",
+    "message": "The core completion pipeline was not run for this fast build. Use --run-core to generate raw core diagnostics. Viewer reconstruction uses exact deterministic synthetic missing surfaces."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "subject": "roman_arena",
+  "case": "diagonal_collapse",
+  "note": "Core pipeline output is preserved in /core. Viewer output uses exact deterministic synthetic missing surfaces when available, avoiding reflected rubble and threshold artifacts.",
+  "core_output_dir": "C:\\Hrishikesh\\point cloud project\\multi-monument-completion-custom-upload-modes\\output\\roman_arena\\diagonal_collapse\\core",
+  "viewer_output_dir": "C:\\Hrishikesh\\point cloud project\\multi-monument-completion-custom-upload-modes\\output\\roman_arena\\diagonal_collapse\\viewer",
+  "counts_viewer": {
+    "raw_input": 13063,
+    "observed_display": 12043,
+    "reconstructed_only": 891,
+    "completed": 12934
+  },
+  "adapter": {
+    "mode": "exact_synthetic_missing_surface",
+    "source": "C:\\Hrishikesh\\point cloud project\\multi-monument-completion-custom-upload-modes\\data\\roman_arena\\diagonal_collapse_missing.csv",
+    "voxel": 0.045,
+    "final_reconstructed_points": 891
+  },
+  "core_report": {
+    "subject": "roman_arena",
+    "case": "diagonal_collapse",
+    "mode": "core_skipped_fast_viewer_build",
+    "message": "The core completion pipeline was not run for this fast build. Use --run-core to generate raw core diagnostics. Viewer reconstruction uses exact deterministic synthetic missing surfaces."
+  }
+}

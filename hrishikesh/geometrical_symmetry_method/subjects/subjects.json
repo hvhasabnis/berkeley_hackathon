@@ -1,0 +1,192 @@
+{
+  "roman_arena": {
+    "name": "Broken Roman Arena",
+    "pipelineArgs": [
+      "--normal-angle-deg",
+      "0",
+      "--voxel",
+      "0.075",
+      "--fine-voxel",
+      "0.050",
+      "--score-sample",
+      "600",
+      "--icp-iterations",
+      "8"
+    ],
+    "camera": {
+      "position": [
+        7.4,
+        -9.2,
+        5.8
+      ],
+      "target": [
+        0,
+        0,
+        1.35
+      ],
+      "gridSize": 15,
+      "pointSizeInput": 0.021,
+      "pointSizeRed": 0.026,
+      "pointSizeCompleted": 0.021
+    },
+    "description": "Elliptical amphitheater with isolated test-case outputs. Viewer reconstruction is validated against the deterministic synthetic reference surface for the selected test case.",
+    "cases": {
+      "baseline_demolition": {
+        "name": "Case 1 - Baseline demolished sector",
+        "input": "data/roman_arena/baseline_demolition.csv",
+        "coreOutput": "output/roman_arena/baseline_demolition/core",
+        "viewerOutput": "output/roman_arena/baseline_demolition/viewer",
+        "description": "Preserves the previously working Roman Arena test data."
+      },
+      "north_rim_blast": {
+        "name": "Case 2 - Absurd north-rim blast",
+        "input": "data/roman_arena/north_rim_blast.csv",
+        "coreOutput": "output/roman_arena/north_rim_blast/core",
+        "viewerOutput": "output/roman_arena/north_rim_blast/viewer",
+        "description": "Large missing upper facade and seating region."
+      },
+      "diagonal_collapse": {
+        "name": "Case 3 - Diagonal collapse scar",
+        "input": "data/roman_arena/diagonal_collapse.csv",
+        "coreOutput": "output/roman_arena/diagonal_collapse/core",
+        "viewerOutput": "output/roman_arena/diagonal_collapse/viewer",
+        "description": "Unrealistic diagonal missing band through facade and seating."
+      },
+      "absurd_half_chop": {
+        "name": "Case 4 - Absurd half-chop demolition",
+        "input": "data/roman_arena/absurd_half_chop.csv",
+        "coreOutput": "output/roman_arena/absurd_half_chop/core",
+        "viewerOutput": "output/roman_arena/absurd_half_chop/viewer",
+        "description": "Roughly half the amphitheater is removed with a height-varying, non-symmetric boundary across facade and seating."
+      }
+    }
+  },
+  "palmyra_arch": {
+    "name": "Broken Palmyra Arch",
+    "pipelineArgs": [
+      "--normal-angle-deg",
+      "0",
+      "--voxel",
+      "0.060",
+      "--fine-voxel",
+      "0.045",
+      "--std-ratio",
+      "2.2",
+      "--score-sample",
+      "600",
+      "--icp-iterations",
+      "8"
+    ],
+    "camera": {
+      "position": [
+        5.8,
+        -8.4,
+        4.4
+      ],
+      "target": [
+        0,
+        0,
+        2.45
+      ],
+      "gridSize": 11,
+      "pointSizeInput": 0.023,
+      "pointSizeRed": 0.03,
+      "pointSizeCompleted": 0.023
+    },
+    "description": "Freestanding arch with independent test cases. Core output is preserved; viewer output uses a subject adapter. Viewer reconstruction is validated against the deterministic synthetic reference surface for the selected test case.",
+    "cases": {
+      "left_upper_breach": {
+        "name": "Case 1 - Left upper breach",
+        "input": "data/palmyra_arch/left_upper_breach.csv",
+        "coreOutput": "output/palmyra_arch/left_upper_breach/core",
+        "viewerOutput": "output/palmyra_arch/left_upper_breach/viewer",
+        "description": "Missing upper-left block and arch shoulder."
+      },
+      "right_pier_shear": {
+        "name": "Case 2 - Right pier shear",
+        "input": "data/palmyra_arch/right_pier_shear.csv",
+        "coreOutput": "output/palmyra_arch/right_pier_shear/core",
+        "viewerOutput": "output/palmyra_arch/right_pier_shear/viewer",
+        "description": "Large vertical missing section through the right pier."
+      },
+      "crown_column_blast": {
+        "name": "Case 3 - Crown and column blast",
+        "input": "data/palmyra_arch/crown_column_blast.csv",
+        "coreOutput": "output/palmyra_arch/crown_column_blast/core",
+        "viewerOutput": "output/palmyra_arch/crown_column_blast/viewer",
+        "description": "Missing crown portion plus opposite column crater."
+      },
+      "absurd_half_chop": {
+        "name": "Case 4 - Absurd half-chop demolition",
+        "input": "data/palmyra_arch/absurd_half_chop.csv",
+        "coreOutput": "output/palmyra_arch/absurd_half_chop/core",
+        "viewerOutput": "output/palmyra_arch/absurd_half_chop/viewer",
+        "description": "A diagonal, non-symmetric half-facade chop through the arch, base, and columns."
+      }
+    }
+  },
+  "leaning_tower": {
+    "name": "Demolished Leaning Tower of Pisa",
+    "pipelineArgs": [
+      "--normal-angle-deg",
+      "0",
+      "--voxel",
+      "0.055",
+      "--fine-voxel",
+      "0.040",
+      "--std-ratio",
+      "2.3",
+      "--score-sample",
+      "600",
+      "--icp-iterations",
+      "8"
+    ],
+    "camera": {
+      "position": [
+        5.2,
+        -8.4,
+        5.1
+      ],
+      "target": [
+        0.35,
+        0.0,
+        3.0
+      ],
+      "gridSize": 10,
+      "pointSizeInput": 0.021,
+      "pointSizeRed": 0.029,
+      "pointSizeCompleted": 0.021
+    },
+    "description": "Synthetic 3D Leaning Tower of Pisa style monument: leaning cylindrical tower with galleries, arches, columns, ring slabs, top bell chamber, base steps, and isolated demolition cases. Petra has been removed.",
+    "cases": {
+      "upper_bell_collapse": {
+        "name": "Case 1 - Upper bell-chamber collapse",
+        "input": "data/leaning_tower/upper_bell_collapse.csv",
+        "coreOutput": "output/leaning_tower/upper_bell_collapse/core",
+        "viewerOutput": "output/leaning_tower/upper_bell_collapse/viewer",
+        "description": "Collapsed upper bell chamber and surrounding gallery rings on one side of the leaning tower."
+      },
+      "lower_arcade_breach": {
+        "name": "Case 2 - Lower arcade breach",
+        "input": "data/leaning_tower/lower_arcade_breach.csv",
+        "coreOutput": "output/leaning_tower/lower_arcade_breach/core",
+        "viewerOutput": "output/leaning_tower/lower_arcade_breach/viewer",
+        "description": "Large demolished lower gallery section with base-step damage and rubble."
+      },
+      "diagonal_tower_crack": {
+        "name": "Case 3 - Diagonal shaft crack",
+        "input": "data/leaning_tower/diagonal_tower_crack.csv",
+        "coreOutput": "output/leaning_tower/diagonal_tower_crack/core",
+        "viewerOutput": "output/leaning_tower/diagonal_tower_crack/viewer",
+        "description": "Diagonal missing band crossing the leaning cylindrical shaft and outer columns."
+      },
+      "absurd_half_chop": {
+        "name": "Case 4 - Absurd half-chop demolition",
+        "input": "data/leaning_tower/absurd_half_chop.csv",
+        "coreOutput": "output/leaning_tower/absurd_half_chop/core",
+        "viewerOutput": "output/leaning_tower/absurd_half_chop/viewer",
+        "description": "A twisting half-tower chop that removes one irregular side of the leaning cylinder, galleries, rings, and bell chamber."
+      }
+    }
+  }
+}
