@@ -69,7 +69,7 @@ Binary big-endian PLY with x y z vertices
 ## Run
 
 ```bash
-cd "C:\Hrishikesh\point cloud project\multi-monument-completion-custom-upload-modes"
+cd "Yourpath\multi-monument-completion-custom-upload-modes"
 py -m pip install -r python/requirements.txt
 py python/run_subject.py --all --regenerate
 py -m http.server 8000
